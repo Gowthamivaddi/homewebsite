@@ -318,7 +318,7 @@
                   Reserve Your Table
                 </h2>
               </div>
-              <form id="reservationForm">
+              <form id="reservationForm" action="connection.php" method="POST">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group mb-20">
@@ -331,7 +331,7 @@
                         class="form-control border-0 bg-white"
                         id="fullname"
                         required
-                        placeholder="Enter full name"
+                        placeholder="Enter full name"  name="full_name"
                       />
                     </div>
                   </div>
@@ -347,7 +347,7 @@
                         class="form-control border-0 bg-white"
                         id="email"
                         required
-                        placeholder="Enter email address"
+                        placeholder="Enter email address" name="Email"
                       />
                     </div>
                   </div>
@@ -359,7 +359,7 @@
                       </label>
                       <select
                         class="niceselect form-control border-0 bg-white"
-                        id="person"
+                        id="person" name="select_person"
                       >
                         <option value="1">1 Person</option>
                         <option value="2">2 Person</option>
@@ -382,7 +382,7 @@
                         class="form-control border-0 bg-white"
                         id="phone"
                         required
-                        placeholder="Enter phone number"
+                        placeholder="Enter phone number" name="select_phone_number"
                       />
                     </div>
                   </div>
@@ -397,7 +397,7 @@
                         name="date"
                         class="form-control border-0 bg-white"
                         id="date"
-                        required
+                        required name="select_date"
                       />
                     </div>
                   </div>
@@ -409,7 +409,7 @@
                       </label>
                       <select
                         class="niceselect form-control border-0 bg-white"
-                        id="time"
+                        id="time" name="select_time"
                       >
                         <option value="1">08.00 AM to 09.00 AM</option>
                         <option value="2">10.00 AM to 11.00 AM</option>
@@ -428,7 +428,7 @@
                         class="form-control border-0 bg-white"
                         cols="30"
                         rows="8"
-                        placeholder="Write message..."
+                        placeholder="Write message..." name="write_message"
                       ></textarea>
                     </div>
                   </div>
